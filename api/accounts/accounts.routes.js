@@ -9,7 +9,9 @@ const {
 } = require('./accounts.controllers');
 
 router.get('/', accountsGet);
+
 router.get('/:username', getAccountByUsername);
+
 router.post('/', accountCreate);
 
 router.delete('/:accountId', accountDelete);
